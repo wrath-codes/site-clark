@@ -11,7 +11,7 @@ const navigation = [
   { name: "Quem Somos?", href: "/about", current: false },
   { name: "Produtos", href: "/products", current: false },
   { name: "Contato", href: "/contact", current: false },
-  { name: "Resolução 382/2020", href: "/resolution", current: false },
+  { name: "Resolução 382/2020", href: "/resolution_382_2020", current: false },
 ];
 
 function classNames(...classes: string[]) {

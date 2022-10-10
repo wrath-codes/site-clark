@@ -27,7 +27,7 @@ const Home: NextPage = () => {
           </div>
           <div className="relative flex justify-center">
             <span className="bg-white px-4 text-sm text-slate-800">
-            <BsFillBookmarkDashFill className="h-5 w-5 text-slate-800"   />
+            <BsFillBookmarkDashFill className="h-5 w-5 text-teal-600"   />
             </span>
           </div>
         </div>
