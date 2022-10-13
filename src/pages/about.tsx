@@ -30,11 +30,11 @@ const  About = () => {
           <div className='mb-6'>
             <div>
               <div className='inline'>
-                <div className='grid grid-cols-1 xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-3 text-center '>
-                  <div className='flex-col'>
+                <div className='grid grid-cols-1 xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-3 break-all'>
+                  <div className='flex-col indent-8 text-left'>
                     <div className='flex flex-col justify-center mt-5 font-extralight'>
                       <p className="mb-3">
-                        Com perfil consultivo e apostando na credibilidade adquirida ao longo de seus 25 anos
+                          Com perfil consultivo e apostando na credibilidade adquirida ao longo de seus 25 anos
                       de atuação no mercado segurador, a Clark atua de forma a ofertar aos seus clientes uma
                       vasta gama de produtos e serviços de acordo com suas particularidades e necessidades
                         relacionadas às suas operações.
@@ -48,7 +48,7 @@ const  About = () => {
                       </p>
                     </div>
                   </div>
-                  <div className='flex-col'>
+                  <div className='flex-col indent-8 text-left'>
                     <div className='flex flex-col justify-center mt-5 font-extralight'>
                       <p className="mb-3">
                         A Clark Corretora de Seguros preza por relacionamentos de longo prazo e, neste sentido,

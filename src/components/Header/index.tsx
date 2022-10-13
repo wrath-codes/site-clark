@@ -47,7 +47,6 @@ const Header = () => {
                         <span className="ml-2">Clark Seguros</span>
                       </div>
                     </div>
-
                   </Link>
                 </div>
                 <div className="hidden sm:block sm:ml-6">
