@@ -18,26 +18,6 @@ interface IProduct {
   link_text: string;
 }
 
-const Product = ({ name, description, icon, link, link_text }: IProduct) => {
-  return (
-    <div className="bg-slate-800 rounded-lg p-4 text-center flex flex-col items-center shadow-md">
-      <div className="text-teal-500 text-7xl mb-2">
-        {icon}
-      </div>
-      <div className="font-semibold text-slate-200 text-xl my-2">
-        {name}
-      </div>
-      <div className="font-extralight text-white text-lg ">
-        {description}
-      </div>
-      <Link href={link}>
-        <a className="bg-teal-500 text-white font-semibold py-2 px-4 rounded mt-4 hover:bg-teal-700 transform transition duration-100 hover:scale-110">
-          {link_text}
-        </a>
-      </Link>
-    </div>
-  )
-}
 
 const productsList = [
   {
@@ -55,9 +35,9 @@ const productsList = [
     link_text: "Solicite Aqui"
   },
   {
-    name:"Plano Dental",
+    name: "Plano Dental",
     description: "Seu sorriso é a porta de entrada para novas oportunidades.",
-    icon:<FaTooth />,
+    icon: <FaTooth />,
     link: "http://sulamericaodonto.com.br/clarkrio",
     link_text: "Solicite Aqui"
   },
@@ -100,10 +80,31 @@ const productsList = [
     name: "Seguro Estagiários",
     description: "O seguro de Acidentes Pessoais ampara os estagiários e  seus familiares na ocorrência de eventos adversos com base na lei do estágio nº 11.788 de 25 de Setembro de 2008.",
     icon: <IoIosSchool />,
-    link: "https://seguros.portalpasi.com.br/seguro/3",
+    link: "https://seguros.portalpasi.com.br/login?Q=Q4q9ZQRmNsES3r1xr01xql7qJLqazQIa11xE1gfVSEmGLTxVyud58Vimc6gsqYGCPfjdo37cP137V31TG/XXFN73EB6JWxXN67XQ+ivC0IXd4F427KFIZ6o7lPYgkm2P",
     link_text: "Contrate Aqui"
   }
 ]
+
+const Product = ({ name, description, icon, link, link_text }: IProduct) => {
+  return (
+    <div className="bg-slate-800 rounded-lg p-4 text-center flex flex-col items-center shadow-md">
+      <div className="text-clark text-7xl mb-2">
+        {icon}
+      </div>
+      <div className="font-semibold text-slate-200 text-xl my-2">
+        {name}
+      </div>
+      <div className="font-extralight text-white text-md">
+        {description}
+      </div>
+      <Link href={link}>
+        <a className="bg-clark text-white font-semibold py-2 px-4 rounded mt-4 hover:bg-clarkHover transform transition duration-100 hover:scale-10">
+          {link_text}
+        </a>
+      </Link>
+    </div>
+  )
+}
 
 const Products = () => {
   return (
@@ -119,15 +120,15 @@ const Products = () => {
         <div className="font-semibold text-slate-800 text-2xl self-center mb-10">
           Nossos produtos
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
           {productsList.map((product, index) => (
             <Product key={index} {...product} />
           ))}
         </div>
-        
+
       </main>
     </div>
   )
 }
-  
+
 export default Products

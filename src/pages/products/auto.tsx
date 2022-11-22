@@ -2,9 +2,6 @@ import Head from "next/head"
 import React from 'react'
 import Header from "../../components/Header"
 
-import { FaCar, FaTooth } from "react-icons/fa"
-import { BiPlusMedical } from "react-icons/bi"
-import Link from "next/link"
 
 const Products = () => {
   return (

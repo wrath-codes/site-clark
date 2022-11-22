@@ -11,8 +11,8 @@ const Resolution = () => {
       </Head>
       <Header />
       <main className="container mx-auto flex min-h-screen flex-col items-center justify-center p-4 text-center max-w-3xl">
-      <div className="font-semibold text-slate-800 text-xl self-start mb-5">
-      Resolução SUSEP 382/2020
+        <div className="font-semibold text-slate-800 text-xl self-start mb-5">
+          Resolução SUSEP 382/2020
         </div>
         <div className="font-extralight text-slate-800 text-xl text-center max-w-3xl">
           Dispõe sobre princípios a serem observados nas práticas de conduta
@@ -23,8 +23,7 @@ const Resolution = () => {
           por esta Resolução, e dá outras providências.
         </div>
 
-        {// A div a seguir é o container do para o download do arquivo
-        }
+
         <div className="flex flex-col justify-center mt-5 font-extralight">
           <p className="mb-3">
             Para acessar o arquivo, clique no botão abaixo:
@@ -34,7 +33,7 @@ const Resolution = () => {
             target="_blank"
             rel="noopener noreferrer"
 
-            className="bg-slate-800 text-white font-semibold py-2 px-4 rounded"
+            className="bg-clark text-white font-semibold py-2 px-4 rounded hover:bg-clarkHover transition duration-200 hover:scale-105"
           >
             <BsFillFilePdfFill className="inline-block mr-2" />
             Resolução SUSEP 382/2020
